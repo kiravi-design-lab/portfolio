@@ -125,6 +125,23 @@ h2 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+.service-detail {
+  margin: 15px 0;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+.service-detail li {
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
 .works-note {
   font-size: 13px;
   color: #777;
