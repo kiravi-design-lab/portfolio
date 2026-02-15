@@ -2,19 +2,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
+   font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    sans-serif;
   background: #f8f9fb;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+
+/* Header */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  opacity: 0.6;
+}
+
+/* Hero */
+
 .hero {
-  height: 80vh;
+  height: 85vh;
   background: url("images/hero.jpg") center/cover no-repeat;
   position: relative;
+  margin-top: 70px;
 }
 
 .overlay {
@@ -26,24 +80,35 @@ body {
   align-items: center;
   color: #fff;
   text-align: center;
+  padding: 0 20px;
 }
 
 .overlay h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 1.4;
 }
+
+.hero-sub {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Sections */
 
 .section {
   max-width: 1000px;
-  margin: 80px auto;
+  margin: 100px auto;
   padding: 0 20px;
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
   border-left: 4px solid #111;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .skills ul {
@@ -69,7 +134,7 @@ h2 {
 .works {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
@@ -81,35 +146,40 @@ h2 {
   text-align: center;
 }
 
+.card:hover {
+  transform: translateY(-6px);
+}
+
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.work-desc {
+  font-size: 14px;
+  color: #666;
+  padding: 10px 20px;
+  line-height: 1.6;
 }
 
 .card a {
   display: inline-block;
-  margin: 15px 0 20px;
+  margin: 15px 0 25px;
   color: #111;
   text-decoration: none;
   font-weight: bold;
 }
 
-.contact .btn {
-  display: block;
-  width: fit-content;
-  margin: 20px auto 0;
-}
-
-
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
+  margin-top: 20px;
+  padding: 12px 28px;
   background: #111;
   color: #fff;
   text-decoration: none;
@@ -123,56 +193,12 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
   color: #777;
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .overlay h1 {
-    font-size: 28px;
-  }
-}
-
-/* Header */
-
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  z-index: 1000;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-
-/* hamburger */
+/* Hamburger */
 
 .hamburger {
   display: none;
@@ -185,18 +211,17 @@ footer {
   width: 25px;
   height: 3px;
   background: #333;
-  transition: 0.3s;
 }
 
-/* mobile */
+/* Mobile */
 
 @media (max-width: 768px) {
 
   .nav {
     position: fixed;
-    top: 60px;
+    top: 70px;
     right: -100%;
-    width: 200px;
+    width: 220px;
     height: 100vh;
     background: #fff;
     transition: 0.3s;
@@ -216,20 +241,13 @@ footer {
   .hamburger {
     display: flex;
   }
+
+  .overlay h1 {
+    font-size: 26px;
+  }
 }
 
 section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 90px;
 }
 
-.work-desc {
-  font-size: 14px;
-  color: #666;
-  padding: 0 20px;
-  line-height: 1.6;
-}
-
-.card a {
-  display: inline-block;
-  margin: 15px 0 25px;
-}
