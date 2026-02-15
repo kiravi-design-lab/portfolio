@@ -4,12 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kiravi Design | Portfolio</title>
+
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="header">
+
+<header class="header">
   <div class="container">
-    <div class="logo">Kiravi Design</div>
+    <div class="logo">
+      <a href="#">
+        <img src="images/logo.svg" alt="Kiravi Design Logo">
+      </a>
+    </div>
 
     <nav class="nav">
       <ul class="nav-list">
@@ -28,43 +36,41 @@
   </div>
 </header>
 
+<header class="hero">
+  <div class="overlay">
+    <h1>シンプルで伝わるランディングページを制作します</h1>
+    <p class="hero-sub">LP制作に特化したフロントエンド開発</p>
+  </div>
+</header>
 
-  <header class="hero">
-    <div class="overlay">
-      <h1>Kiravi Design</h1>
-<p>Frontend Developer / Web Creator</p>
-    </div>
-  </header>
+<section id="about" class="section">
+  <h2>About</h2>
+  <p>
+    Webサイトのコーディングを中心に制作しています。
+    シンプルで洗練されたデザインを意識し、
+    レスポンシブ対応まで丁寧に実装します。
+    ご連絡はメールにていつでも可能です。
+  </p>
+</section>
 
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      Webサイトのコーディングを中心に制作しています。
-      シンプルで洗練されたデザインを意識し、
-      レスポンシブ対応まで丁寧に実装します。
-      ご連絡はメールにていつでも可能です。
-    </p>
-  </section>
+<section id="skills" class="section skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Responsive Design</li>
+    <li>Git / GitHub</li>
+  </ul>
+</section>
 
- <section id="skills" class="section skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Git / GitHub</li>
-      <li>WordPress</li>
-    </ul>
-  </section>
-
-  <section id="works" class="section">
+<section id="works" class="section">
   <h2>Works</h2>
-  
- <p class="works-note">
-  ※全ての制作物はHTML / CSS / JavaScriptによる実装、
-  レスポンシブ対応済みです。
- </p>
+
+  <p class="works-note">
+    ※全ての制作物はHTML / CSS / JavaScriptによる実装、
+    レスポンシブ対応済みです。
+  </p>
 
   <div class="works">
 
@@ -75,9 +81,7 @@
         トレーニングジムを想定したブランドLP。
         力強さを意識した配色とレイアウト設計。
       </p>
-      <a href="https://kiravi-design-lab.github.io/iron-core/"
-         target="_blank"
-         rel="noopener noreferrer">
+      <a href="https://kiravi-design-lab.github.io/iron-core/" target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -89,10 +93,7 @@
         美容サロンを想定したサイト制作。
         柔らかさと上品さを意識したデザイン。
       </p>
-
-      <a href="https://kiravi-design-lab.github.io/bloom-salon/"
-         target="_blank"
-         rel="noopener noreferrer">
+      <a href="https://kiravi-design-lab.github.io/bloom-salon/" target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
@@ -104,28 +105,24 @@
         カフェを想定したWebサイト。
         写真を活かしたシンプルなUI設計。
       </p>
-      <a href="https://kiravi-design-lab.github.io/cafe-lien/"
-         target="_blank"
-         rel="noopener noreferrer">
+      <a href="https://kiravi-design-lab.github.io/cafe-lien/" target="_blank" rel="noopener noreferrer">
         View Project →
       </a>
     </div>
 
   </div>
-
 </section>
 
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>お仕事のご相談はメールにてお願いいたします。</p>
+  <a class="btn" href="mailto:kiravi.design@gmail.com">Send Email</a>
+</section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>お仕事のご相談はメールにてお願いいたします。</p>
-    <a class="btn" href="mailto:kiravi.design@gmail.com">Send Email</a>
-  </section>
+<footer>
+  © 2026 Kiravi Design
+</footer>
 
-  <footer>
-    © 2026 Portfolio
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
